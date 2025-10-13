@@ -1,0 +1,86 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+        <title>
+            Register
+        </title>
+        <header class="header">
+            <article>
+                Register for Data Mining
+            </article>
+            <nav>
+                <div class="container">
+                    <ul class="myUL">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="register.html">Register</a>
+                    </ul>
+                </div>
+            </nav>
+        <header>
+    <div class="body">
+        <body>
+            <article>
+                We are going to be extracting all of your personal data and then selling it
+                on the black market. This is not optional.
+            </article>
+            <form action="https://formspree.io/f/myzkjveq" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    
+                    <label for="email">Please enter your email address:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="bcertificate">Please upload a copy of your birth certificate:</label>
+                    <input type="file" id="bcertificate" name="bcertificate"><br>
+
+                    <label for="occupation">Please select your occupation:</label>
+                    <select name="occupation" id="occupation">
+                        <option value="FT">Full Time Employee</option>
+                        <option value="PT">Part Time Employee</option>
+                        <option value="FTStudent">Full Time Student</option>
+                        <option value="PTStudent">Part Time Student</option>
+                        <option value="Unemployed">Unemployed</option>
+                    </select required><br>
+
+                    <label for="checkbox">Of the following options, select what is true for you:</label><br>
+                    <input type="checkbox" id="social1" name="social1" value="Instagram">
+                    <label for="social1">I use Instagram</label>
+                    <input type="checkbox" id="social2" name="social2" value="Facebook">
+                    <label for="social2">I use Facebook</label>
+                    <input type="checkbox" id="social3" name="social3" value="Twitter">
+                    <label for="social3">I use Twitter</label>
+                    <input type="checkbox" id="social4" name="social4" value="VPN">
+                    <label for="social4">I use public wifi without a VPN</label><br>
+            
+                    <label for="ownvehicle">Please select the color of your motor vehicle:</label><br>
+                    <input type="radio" id="ownvehicle" name="ownvehicle" value="DoYouHaveCar">
+                        <input type="color" id="vehicle" name="vehicle" value="VehicleColor"><br>
+                    <input type="radio" id="novehicle" name="ownvehicle" value="NoCar">
+                    <label for="novehicle">I DO NOT OWN A CAR</label><br>
+
+                    <label for="bankingdetails">In the space below, please enter your banking routing and account numbers:</label><br>
+                    <textarea id="bankingdetails" name="bankingdetails">
+ Bank Name:
+ Account #:
+ Routing #:
+                    </textarea required><br>
+                    <label for="password">Please enter your banking password:</label>
+                    <input type="password" id="password" name="password" required><br>
+
+                    <label for="age">Use the slider below to indicate your current age:</label>
+                    <input type="range" value="0" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                    <output></output><br>
+                    <input type="submit"><br>
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </body>
+    </div>
+    <footer>
+    </footer>
+</html>
