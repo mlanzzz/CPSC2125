@@ -1,0 +1,57 @@
+p{
+margin-top: 25px;
+}
+h3{
+    color: darkblue;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  width: 50%;
+  padding: 35px;
+  float:left;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .column2 {
+    width: 100%;
+  }
+}
+img {
+  border-radius: 8px;
+}
+ul{
+    margin-top: 25px;
+}
+a{
+    display: inline;
+}
+.nobr{
+    white-space: nowrap;
+}
+main{
+    background-color: rgb(187, 204, 234);
+}
+header{
+    background-color: rgb(99, 147, 235);
+}
+.logo{
+    color: rgb(39, 60, 123);
+}
